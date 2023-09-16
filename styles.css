@@ -1,0 +1,56 @@
+body{
+    background-color: #260a2d;
+    margin: 0;
+}
+
+.fundojogo{
+    background-color: white;
+}
+
+.personagem{
+    position: absolute;
+}
+
+#inimigo{
+    position: absolute;
+    animation: moveInimigo 10s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveInimigo {
+    0% {
+        left: 270px;
+        top: 250px;
+    }
+    35% {
+        left: 700px;
+        top: 250px;
+    }
+    75% {
+        left: 700px;
+        top: 420px;
+    }
+    100% {
+        left: 330px;
+        top: 420px;
+    }
+    
+}
+
+
+#casa{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 20%;
+    left: 20%;
+}
+
+#personagem{
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    position: relative;
+}
