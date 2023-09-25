@@ -1,6 +1,21 @@
-body{
-    background-color: #260a2d;
+body {
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black; /* Cor de fundo da página */
+    flex-direction: column;
+}
+
+.quadro-do-jogo {
+    width: 100%; 
+    max-width: 800px; 
+    height: 60vh; 
+    background-color: #fff; 
+    border: 2px solid #000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .fundojogo{
@@ -53,4 +68,15 @@ body{
     left: 0;
     z-index: 8;
     position: relative;
+}
+
+.cenario {
+    position: relative; 
+}
+
+.cenario img {
+    position: absolute;
+    display: none; 
+    width: 100px;
+    height: 100px;
 }
